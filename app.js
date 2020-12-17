@@ -20,24 +20,24 @@ submitButton.addEventListener('click', () => {
     triesLeft.textContent = guessesLeft + ' guesses left';
   
     if (userGuess === 0) {
-      guessRange.textContent = 'Winner!!';
-      winLose.textContent = 'Well done!!';
-      submitButton.disabled = true;
+        guessRange.textContent = 'Winner!!';
+        winLose.textContent = 'Well done!!';
+        submitButton.disabled = true;
     } else if (userGuess === -1) {
-      guessRange.textContent = 'Your guess is too low.';
+        guessRange.textContent = 'Your guess is too low.';
     } else if (userGuess === 1) {
-      guessRange.textContent = 'Your guess is too high.';
+        guessRange.textContent = 'Your guess is too high.';
     } if (guessesLeft === 0) {
-      winLose.textContent = 'Wow you\'re not very good at this.';
-      submitButton.disabled = true;
+        winLose.textContent = 'Wow you\'re not very good at this.';
+        submitButton.disabled = true;
     }
-  });
+});
 
-  resetButton.addEventListener('click', () => {
+resetButton.addEventListener('click', () => {
     guessesLeft = 4;
     winLose.textContent = '';
     guessRange.textContent = '';
     triesLeft.textContent = guessesLeft + ' guesses left';
     submitButton.disabled = false;
     document.getElementById('input').value = '';
-  });
+});
