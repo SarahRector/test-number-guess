@@ -1,3 +1,4 @@
+
 // import functions and grab DOM elements
 import compareNumbers from './numbers.js';
 
